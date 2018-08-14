@@ -17,7 +17,9 @@ export class QuoteComponent implements OnInit {
   downvote(i){
     this.quotes[i].downvotes +=1
   }
-
+  goalDelete(complete:boolean){
+  
+    }
   constructor() { }
 
 
