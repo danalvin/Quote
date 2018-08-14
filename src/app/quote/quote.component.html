@@ -1,10 +1,10 @@
 <app-form (emitQuote)="addQuote($event)"></app-form>
-<div *ngFor="let quote of quotes; let i=index">
+<div id="section" *ngFor="let quote of quotes; let i=index">
   <p appHighlight>
       Quote:{{quote.quotestr}}
     </p>
   <app-details [quote]="quote"></app-details>
-  <button class="btn btn-success" (click)="upvote(i)">Upvote ({{quote.upvotes}})</button>
-  <button class="btn btn-info" (click)="downvote(i)">Downvote ({{quote.downvotes}})</button>
+  <button class="btn btn-success" (click)="upvote(i)"> <img src="src/assets/love.png" alt="" style="width:25px;height:25px;"> ({{quote.upvotes}})</button>
+  <button class="btn btn-info" (click)="downvote(i)"> <img src="src/assets/dislike.png" alt=""style="width:25px;height:25px;"> ({{quote.downvotes}})</button>
   <button class="btn btn-danger" (click)="deleteQuote(true)">Delete</button>
 </div>
