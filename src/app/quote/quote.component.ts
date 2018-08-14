@@ -7,7 +7,7 @@ import {Quote} from "../quote"
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes=[new Quote("you only live once","YOLO","me")]
+  quotes=[new Quote("Life is a cycle","anonymous","me")]
   addQuote(myQuote){
     this.quotes.push(myQuote)
   }
