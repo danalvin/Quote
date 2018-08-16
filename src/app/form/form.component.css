@@ -2,6 +2,18 @@ h1{
     text-align: center;
     font-weight: 100;
     font-family: 'Tangerine', serif;
-    font-size: 48px;
+    font-size: 60px;
     text-shadow: 4px 4px 4px #aaa;
+}
+p{
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Tangerine', serif;
+    font-size: 38px;
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+#section{
+    float: left;
+    
 }
