@@ -1,10 +1,20 @@
 <app-form (emitQuote)="addQuote($event)"></app-form>
-<div id="section" *ngFor="let quote of quotes; let i=index">
-  <p appHighlight>
-      Quote:{{quote.quotestr}}
-    </p>
-  <app-details [quote]="quote"></app-details>
-  <button class="btn btn-success" (click)="upvote(i)"> <img src="src/assets/love.png" alt="" style="width:25px;height:25px;"> ({{quote.upvotes}})</button>
-  <button class="btn btn-info" (click)="downvote(i)"> <img src="src/assets/dislike.png" alt=""style="width:25px;height:25px;"> ({{quote.downvotes}})</button>
-  <button class="btn btn-danger" (click)="deleteQuote(true)">Delete</button>
+<div id="section" *ngFor="let quote of quotes; let i=index " class="col-md-7 " >
+<div class="w3-card-4" style="width:70%;">
+    <header class="w3-container w3-black">
+      <h1 appHighlight >{{quote.quotestr}}</h1>
+    </header>
+
+    <div class="w3-container">
+        <app-details [quote]="quote"></app-details>
+    </div>
+
+    <footer class="w3-container w3-white">
+      <h5>
+          <button class="btn btn-success" (click)="upvote(i)"> <img src="src/assets/love.png" alt="" style="width:25px;height:25px;"> {{quote.upvotes}}</button>
+          <button class="btn btn-info" (click)="downvote(i)"> <img src="src/assets/dislike.png" alt=""style="width:25px;height:25px;">   {{quote.downvotes}}</button>
+          <button class="btn btn-danger" (click)="deleteQuote(true)">Delete</button>
+      </h5>
+      </footer>
+</div>
 </div>
