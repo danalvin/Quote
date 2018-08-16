@@ -8,6 +8,7 @@ import {Quote} from "../quote"
 })
 export class QuoteComponent implements OnInit {
   quotes=[new Quote("Life is a cycle","anonymous","me")]
+  isComplete: any;
   addQuote(myQuote){
     this.quotes.push(myQuote)
   }
@@ -17,9 +18,10 @@ export class QuoteComponent implements OnInit {
   downvote(i){
     this.quotes[i].downvotes +=1
   }
-  goalDelete(complete:boolean){
-  
-    }
+  deleteQuote(index){
+    this.quotes.splice(index, 1);
+  }
+
   constructor() { }
 
 
