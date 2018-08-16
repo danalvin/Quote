@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Getting Started
 
-To get started with this project, clone the project onto the location of choice and locate index.html in the parent folder. Open the file with a browser of your choice and view the website on yur local machine. Alternatively, you may also view the application by visiting https://github.com/danalvin/Quotes
+To get started with this project, clone the project onto the location of choice and locate index.html in the parent folder. Open the file with a browser of your choice and view the website on yur local machine. Alternatively, you may also view the application by visiting https://danalvin.github.io/Quote/
 
 ### Prerequisites
 
